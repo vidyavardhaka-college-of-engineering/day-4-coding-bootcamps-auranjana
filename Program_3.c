@@ -13,13 +13,13 @@
    #include<stdio.h>
    int main(){
    /* 2D array declaration*/
-   int a[2][3];
+   int a[2][2];
    /*Counter variables for the loop*/
    int i,j;
    printf("Enter the array elements");
    for(i=0;i<2;i++)
    {
-     for(j=0;j<3;j++)
+     for(j=0;j<2;j++)
      {
        scanf("%d",&a[i][j]);
      }
@@ -29,9 +29,10 @@
    printf("2 dimensional array\n");
    for(i=0;i<2;i++)
    {
-     for(j=0;j<3;j++)
+     printf("\n");
+     for(j=0;j<2;j++)
      {
-       printf("%d",a[i][j]);
+       printf("\t%d",a[i][j]);
        if (j==2)
        {
          printf("\n");
