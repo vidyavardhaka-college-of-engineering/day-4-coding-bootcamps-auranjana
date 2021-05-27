@@ -6,34 +6,39 @@
 //Output: 
 //1   2
 //3   4
-#include<stdio.h> 
-int main()
-{
   //Declare all the variables[row, col, array a(2D array), i] used in the code
    //Read the Value of row and coloumn of the matrix (i.e size of matrix) using scanf statement
    //Read the elements of matrix a using nested for loop and scanf statment
    //Print the elements of matrix a using nested for loop and printf statment as per the above specified format
    #include<stdio.h>
-    int main()
+   int main(){
    /* 2D array declaration*/
-   int disp[2][3];
+   int a[2][3];
    /*Counter variables for the loop*/
-   int i, j;
-   for(i=0; i<2; i++)
-    {
-      for(j=0;j<3;j++)
-       {
-         printf("Enter value for disp[%d][%d]:", i, j);
-         scanf("%d", &disp[i][j]);
-      }
+   int i,j;
+   printf("Enter the array elements");
+   for(i=0;i<2;i++)
+   {
+     for(j=0;j<3;j++)
+     {
+       scanf("%d",&a[i][j]);
+     }
    }
+
    //Displaying array elements
-   printf("Two Dimensional array elements:\n");
-   for(i=0; i<2; i++) {
-      for(j=0;j<3;j++) {
-         printf("%d ", disp[i][j]);
-         if(j==2)
-         {
-            printf("\n");
-  return 0;
-}
+   printf("2 dimensional array\n");
+   for(i=0;i<2;i++)
+   {
+     for(j=0;j<3;j++)
+     {
+       printf("%d",a[i][j]);
+       if (j==2)
+       {
+         printf("\n");
+       }
+     }
+   }     
+       return 0;
+   }
+
+

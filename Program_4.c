@@ -7,6 +7,20 @@
 #include <stdio.h>
 int main()
 {
+  int n,a[10],i,sum=0;
+  printf("Enter the number of array elements");
+  scanf("%d",&n);
+  printf("Enter the array elements");
+  for(i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  for(i=0;i<n;i++)
+  {
+    sum=sum+a[i];
+  }
+  printf("The sum=%d",sum);
+
   //Declare all the variables[N, array a(1D array), i, sum=0] used in the code
   //Read the Value of array size N using scanf statement
   //Read the array elements using for loop and scanf statment
